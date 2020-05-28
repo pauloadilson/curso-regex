@@ -6,8 +6,8 @@ const read = nomeArquivo =>
 
 const write = (nomeArquivo, conteudo) => {
     const dirname = `${__dirname}/alterados`
-    if (!fs.existsSync(dirname)) {
-        fs.mkdirSync(dirname)
+    if (!fs.existsSync(dirname)) { // se não existe
+        fs.mkdirSync(dirname) // cria
     }
 
     fs.writeFileSync(`${dirname}/${nomeArquivo}`, conteudo, { encoding: 'utf8' })

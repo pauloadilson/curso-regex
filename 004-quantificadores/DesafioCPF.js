@@ -7,4 +7,6 @@ CPF dos aprovados:
     - 789.112.543-00
 `
 
-console.log(texto.match(/\d{3}\.\d{3}\.\d{3}-\d{2}/g))
+console.log(texto.match(/\d{3}\.\d{3}\.\d{3}-\d{2}/g)) //exato de 3
+const regexCPF = /\d.{13}/g
+console.log(texto.match(regexCPF))

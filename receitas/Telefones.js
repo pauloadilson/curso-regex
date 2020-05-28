@@ -7,4 +7,4 @@ Lista telefônica:
     - (1) 4321-1234
 `
 
-console.log(texto.match(/(\(\d{2}\)\s?)?\d{4,5}-\d{4}/g))
+console.log(texto.match(/(\(\d{2}\)\s?)?\d{4,5}-\d{4}/g)) //grupos e espaço opicional

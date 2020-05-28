@@ -14,6 +14,6 @@ Válidos:
 0.0.0.0
 `
 
-const n = '(\\d{1,2}|1\\d{2}|2[0-4]\\d|25[0-5])'
+const n = '(\\d{1,2}|1\\d{2}|2[0-4]\\d|25[0-5])' // dentro de string \ precisa ser \\ escape a mais
 const ipv4 = RegExp(`\\b${n}\\.${n}\\.${n}\\.${n}\\b`, 'g')
 console.log(texto.match(ipv4))

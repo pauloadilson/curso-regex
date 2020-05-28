@@ -6,6 +6,10 @@ Os e-mails dos convidados são:
     - maria_silva@registro.br
     - rafa.sampaio@yahoo.com
     - fulano+de+tal@escola.ninja.br
+    - paulo@fatec.sp.gov.br
 `
 
-console.log(texto.match(/\S+@\w+\.\w{2,6}(\.\w{2})?/g))
+console.log(texto.match(/\S+@\w+\.\w{2,6}(\.\w+)?(\.\w{2})?/g))
+// \S tudo o que não é espaço
+// \w+  .literal \w{2,6}
+// opicional \w() de  

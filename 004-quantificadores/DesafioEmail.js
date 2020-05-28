@@ -10,7 +10,11 @@ Os e-mails dos convidados são:
 console.log(texto.match(/[a-zA-Z0-9_]+@[a-zA-Z0-9_]+\.[a-zA-Z0-9_]{2,4}/g))
 console.log(texto.match(/\w+@\w+\.\w{2,4}/g))
 console.log(texto.match(/[\w.]+@\w+\.\w{2,4}/g))
-console.log(texto.match(/[\w.]+@\w+\.\w{2,4}\.?\w{0,2}/g))
+console.log(texto.match(/[\w.]+@\w+\.\w{2,4}\.?\w{0,2}/g)) //? torna \. opcional e o que vem depois tbm
+
+const regexEmail = /\w.{1,}@\w.{1,}\.\w{1,}/g
+console.log(texto.match(regexEmail))
+console.log(texto.match(/\w.+@\w.+\.\w*/g)) //precisa ter ponto 
 
 // no futuro...
-console.log(texto.match(/[\w.]+@\w+\.\w{2,4}(\.\w{2})?/g))
+console.log(texto.match(/[\w.]+@\w+\.\w{2,4}(\.\w{2})?/g)) // () grupo
